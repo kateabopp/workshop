@@ -1,3 +1,5 @@
+## Initial repo setup
+
 echo "# workshop" >> README.md
 git init
 git add README.md
@@ -5,3 +7,17 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/kateabopp/workshop.git
 git push -u origin main
+
+## How to make changes
+
+- Create a new branch:
+git checkout -b <branch-name>
+
+- Make changes in the branch and commit it (using the UI)
+
+- Create a Pull Request on GitHub
+
+- Review and merge the PR
+
+
+
