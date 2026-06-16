@@ -1,4 +1,12 @@
-## Create a new feature branch from the command line
+## Make sure your local main branch is current with origin (GitHub in your case)
+
+```shell
+# The "checkout" command without any arguments tells git to change to that branch
+git checkout main
+git pull
+```
+
+## Create a new feature branch from the tip of the main branch
 
 ```shell
 # The '-b' argument tells git to create a new branch named 
@@ -32,9 +40,9 @@ git push --set-upstream origin add-divide-func-to-math
 - Use the "add-divide-func-to-math" branch as the source branch
 - Use the "main" branch as the target branch
 - Review the changes for correctness
-- If correct, merge the PR and delete the branch
+- If correct, merge the PR and delete the branch in the GitHub UI
 
-## Check that the main branch has the changes you made
+## Check that the main branch has the changes you made on GitHub
 
 ## Delete the feature branch from your laptop
 
@@ -45,6 +53,6 @@ git checkout main
 # Then delete the feature branch
 git branch -D add-divide-func-to-math
 
-# Refresh your local main
+# Refresh your local main and make sure that you have the divide function locally
 git pull
 ```
