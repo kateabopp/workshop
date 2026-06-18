@@ -1,4 +1,4 @@
-## Make sure your local main branch is current with origin (GitHub in your case)
+## Before starting on a new feature or bug fix, *always* make sure your local main branch is current with origin (GitHub in your case)
 
 ```shell
 # The "checkout" command without any arguments tells git to change to that branch
@@ -18,6 +18,7 @@ git checkout -b add-error-handling-to-divide
 
 - If y is 0, then print an error saying so
 - Otherwise, return the quotient (i.e. current behavior)
+- Add a call to divide with y = 0 to test it
 
 ## Commit the change
 
@@ -26,13 +27,13 @@ git checkout -b add-error-handling-to-divide
 git commit -m "Adding error handling to divide function in math" practice/01-math.py
 ```
 
-## Push the change to origin, i.e. GitHub
+## Push the branch to origin, i.e. GitHub
 
 ```shell
 git push --set-upstream origin add-error-handling-to-divide
 ```
 
-## Check that the branch appeared on GitHub
+## Check that the branch appeared on the GitHub UI
 
 ## Create a Pull Request from GitHub
 
@@ -41,17 +42,22 @@ git push --set-upstream origin add-error-handling-to-divide
 - Review the changes for correctness
 - If correct, merge the PR and delete the branch in the GitHub UI
 
-## Check that the main branch has the changes you made on GitHub
+## Check that the main branch has the changes you made from the GitHub UI
+
+## Check that the main branch on your laptop does NOT have the changes yet after changing to it
+
+```shell
+git checkout main
+```
+
+## Refresh the main branch on your laptop and verify you got the changes 
+
+```shell
+git pull
+```
 
 ## Delete the feature branch from your laptop
 
 ```shell
-# First change to the main branch
-git checkout main
-
-# Then delete the feature branch
 git branch -D add-error-handling-to-divide
-
-# Refresh your local main and make sure that you have the updated divide function locally
-git pull
 ```
