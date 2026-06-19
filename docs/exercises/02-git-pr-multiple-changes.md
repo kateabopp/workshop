@@ -18,6 +18,7 @@ git checkout -b test-error-handling
 
 - Update the message to "Hello world! Git rules!" in 00-hello.py
 - Uncomment the "Test error case" lines in both 02-factorial.py and 03-fibonacci.py
+- Run both and verify expected behavior
 
 ## Commit the changes
 
