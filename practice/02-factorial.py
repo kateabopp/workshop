@@ -26,4 +26,4 @@ for i in range(11):
 print("---")
 
 # Test error case - try uncommenting this
-# factorial(-1)
+factorial(-1)

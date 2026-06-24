@@ -45,4 +45,4 @@ print_fibonacci(10)
 print("\n---")
 
 # Test error case - run after uncommenting this
-# print_fibonacci(-1)
+print_fibonacci(-1)
